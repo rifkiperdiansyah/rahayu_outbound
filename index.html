@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahayu Outbound - Pengalaman Petualangan & Team Building Modern</title>
+  <meta name="description" content="Penyedia jasa outbound, rafting, paintball, camping, glamping, dan team building terbaik di alam terbuka dengan instruktur profesional dan keamanan terjamin.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#022c22',
+            },
+            accent: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased overflow-x-hidden selection:bg-emerald-500 selection:text-white">
+
+  <!-- ==========================================
+       HEADER & NAVIGATION BAR (5 Menu - Dominan Putih)
+       ========================================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo & Name -->
+        <a href="#home" class="flex items-center space-x-0 group">
+          <img src="img/logo.png" alt="Rahayu Outbound Logo" class="h-20 w-auto group-hover:scale-105 transition-transform duration-300 drop-shadow-md">
+          <div>
+            <span class="text-xl font-extrabold tracking-tight text-slate-900 block leading-none">RAHAYU</span>
+            <span class="text-[10px] font-bold text-emerald-600 tracking-widest uppercase">OUTBOUND</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu (5 Menu) -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="nav-link text-sm font-bold text-slate-700 hover:text-emerald-600 transition-colors duration-200 py-2">Home</a>
+          <a href="#oneday" class="nav-link text-sm font-bold text-slate-700 hover:text-emerald-600 transition-colors duration-200 py-2">Paket Oneday</a>
+          <a href="#menginap" class="nav-link text-sm font-bold text-slate-700 hover:text-emerald-600 transition-colors duration-200 py-2">Paket Menginap</a>
+          <a href="#gallery" class="nav-link text-sm font-bold text-slate-700 hover:text-emerald-600 transition-colors duration-200 py-2">Gallery</a>
+          <a href="#about" class="nav-link text-sm font-bold text-slate-700 hover:text-emerald-600 transition-colors duration-200 py-2">About</a>
+        </nav>
+
+        <!-- CTA Direct Contact Button -->
+        <div class="hidden md:flex items-center">
+          <a href="https://wa.me/6281234567890?text=Halo%20Rahayu%20Outbound,%20saya%20ingin%20tanya%20informasi%20paket" target="_blank" class="px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-md shadow-emerald-600/20 hover:shadow-emerald-500/40 hover:-translate-y-0.5 transition-all duration-200 flex items-center space-x-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Hubungi Kami</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-700 hover:text-slate-900 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars-staggered text-2xl"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-b border-slate-200 px-4 pt-2 pb-6 transition-all duration-300 shadow-xl">
+      <div class="flex flex-col space-y-3">
+        <a href="#home" class="mobile-nav-link text-slate-800 hover:text-emerald-600 font-bold py-2 border-b border-slate-100">Home</a>
+        <a href="#oneday" class="mobile-nav-link text-slate-800 hover:text-emerald-600 font-bold py-2 border-b border-slate-100">Paket Oneday</a>
+        <a href="#menginap" class="mobile-nav-link text-slate-800 hover:text-emerald-600 font-bold py-2 border-b border-slate-100">Paket Menginap</a>
+        <a href="#gallery" class="mobile-nav-link text-slate-800 hover:text-emerald-600 font-bold py-2 border-b border-slate-100">Gallery</a>
+        <a href="#about" class="mobile-nav-link text-slate-800 hover:text-emerald-600 font-bold py-2">About</a>
+        <a href="https://wa.me/6281234567890?text=Halo%20Rahayu%20Outbound" target="_blank" class="w-full text-center py-3 rounded-xl bg-emerald-600 text-white font-bold flex items-center justify-center space-x-2 shadow-lg shadow-emerald-900/20">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Konsultasi Gratis via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ==========================================
+       SECTION 1: HOME (Hero Background Slider)
+       ========================================== -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    
+    <!-- Hero Slider Container -->
+    <div class="absolute inset-0 z-0">
+      
+      <!-- Slide 1 -->
+      <div class="hero-slide active">
+        <img src="img/rafting1.JPG" alt="Outbound Team Building" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/75 via-slate-900/20 to-slate-900/75"></div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <img src="img/r2.JPG" alt="Rafting Adventure" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/75 via-slate-900/20 to-slate-900/75"></div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <img src="img/r3.JPG" alt="Pine Forest Camping" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/75 via-slate-900/20 to-slate-900/75"></div>
+      </div>
+
+    </div>
+
+    <!-- Hero Content Overlay -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20 reveal">
+      
+      <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-white/90 backdrop-blur-md border border-emerald-500/30 text-emerald-700 text-xs sm:text-sm font-extrabold mb-6 shadow-lg animate-float">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+        <span>Penyedia Outbound & Rafting Terpercaya</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-5xl font-black text-white tracking-tight leading-tight mb-6 drop-shadow-md">
+        Ciptakan Momen Kebersamaan & <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300">Petualangan Seru</span> di Alam Terbuka
+      </h1>
+
+      <p class="text-base sm:text-xl text-slate-100 max-w-3xl mx-auto mb-10 font-medium leading-relaxed drop-shadow-sm">
+        Solusi lengkap untuk Kegiatan Gathering Perusahaan, School Outing, Rafting Arung Jeram, Camping Pine Forest, dan Glamping Mewah dengan standar keamanan internasional.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+        <a href="#oneday" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-base shadow-xl shadow-emerald-500/30 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center space-x-2">
+          <span>Jelajahi Paket Oneday</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#menginap" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-900 font-extrabold text-base shadow-xl border border-slate-200 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center space-x-2">
+          <i class="fa-solid fa-campground text-emerald-600"></i>
+          <span>Paket Menginap</span>
+        </a>
+      </div>
+
+      <!-- Quick Trust Indicators (White Cards Grid) -->
+      <!-- <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
+        <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 border border-slate-200 shadow-lg text-center">
+          <div class="text-2xl sm:text-3xl font-black text-emerald-600">10+ Tahun</div>
+          <div class="text-xs sm:text-sm font-bold text-slate-700 mt-1">Pengalaman Outbound</div>
+        </div>
+        <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 border border-slate-200 shadow-lg text-center">
+          <div class="text-2xl sm:text-3xl font-black text-amber-600">500+ Event</div>
+          <div class="text-xs sm:text-sm font-bold text-slate-700 mt-1">Corporate & Komunitas</div>
+        </div>
+        <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 border border-slate-200 shadow-lg text-center">
+          <div class="text-2xl sm:text-3xl font-black text-teal-600">100% Safety</div>
+          <div class="text-xs sm:text-sm font-bold text-slate-700 mt-1">Peralatan Terstandar</div>
+        </div>
+        <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 border border-slate-200 shadow-lg text-center">
+          <div class="text-2xl sm:text-3xl font-black text-emerald-600">50.000+</div>
+          <div class="text-xs sm:text-sm font-bold text-slate-700 mt-1">Peserta Puas</div>
+        </div>
+      </div> -->
+
+    </div>
+
+    <!-- Slider Navigation Buttons -->
+    <button id="prevSlide" class="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/80 hover:bg-emerald-600 text-slate-800 hover:text-white items-center justify-center transition-all duration-200 shadow-lg border border-slate-200" aria-label="Previous Slide">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button id="nextSlide" class="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/80 hover:bg-emerald-600 text-slate-800 hover:text-white items-center justify-center transition-all duration-200 shadow-lg border border-slate-200" aria-label="Next Slide">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <!-- Slider Indicators Dot -->
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex space-x-3">
+      <button class="slider-dot w-8 h-3 rounded-full bg-emerald-500 transition-all duration-300" aria-label="Slide 1"></button>
+      <button class="slider-dot w-3 h-3 rounded-full bg-white/70 hover:bg-white transition-all duration-300" aria-label="Slide 2"></button>
+      <button class="slider-dot w-3 h-3 rounded-full bg-white/70 hover:bg-white transition-all duration-300" aria-label="Slide 3"></button>
+    </div>
+
+  </section>
+
+
+
+
+
+<!--  ==========================================
+       SECTION 2: PAKET ONEDAY (GLASSMORPHISM STYLE)
+       ========================================== -->
+  <section id="oneday" class="py-24 relative overflow-hidden bg-slate-50">
+    <!-- Section Background Image -->
+    <div class="gunung absolute inset-0 z-0">
+      <img src="img/gunnung.png" alt="Pine Forest Background" class="w-full h-full object-cover opacity-100">
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-0/0 via-slate-10/10 to-slate-0/0"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10 reveal">
+        <span class="inline-block px-4 py-1.5 rounded-full text-emerald-400 font-extrabold text-xs sm:text-sm tracking-widest uppercase mb-3">Pricelist Resmi Rahayu Outbound</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-2 mb-4 drop-shadow-md">Paket Outbound Oneday</h2>
+        <p class="text-slate-300 text-white font-medium drop-shadow-sm">
+          Pilih wahana favorit secara satuan atau ambil paket bundling hemat kegiatan 1 hari tanpa menginap.
+        </p>
+      </div>
+
+      <!-- Tombol Navigasi / Filter Switcher (Glassmorphic Tabs) -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12 reveal">
+        <button class="oneday-tab-btn active px-6 py-2.5 rounded-full text-xs sm:text-sm font-extrabold bg-emerald-500/70 backdrop-blur-md border border-emerald-400/60 text-emerald-700 shadow-lg shadow-emerald-500/10 transition-all duration-300" data-oneday-tab="satuan">
+          <i class="fa-solid fa-person-running mr-1.5"></i> Wahana Satuan
+        </button>
+        <button class="oneday-tab-btn px-6 py-2.5 rounded-full text-xs sm:text-sm font-extrabold bg-slate-400/40 backdrop-blur-md text-slate-100 hover:bg-slate-200/60 border border-white/10 transition-all duration-300" data-oneday-tab="kegiatan">
+          <i class="fa-solid fa-layer-group mr-1.5"></i> Paket Bundling
+        </button>
+        <button class="oneday-tab-btn px-6 py-2.5 rounded-full text-xs sm:text-sm font-extrabold bg-slate-400/40 backdrop-blur-md text-slate-100 hover:bg-slate-200/60 border border-white/10 transition-all duration-300" data-oneday-tab="all">
+          <i class="fa-solid fa-list-check mr-1.5"></i> Semua Paket
+        </button>
+      </div>
+
+      <!-- GRID KARTU PAKET ONEDAY (Glassmorphic Cards) -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+
+        <!-- ================= SATUAN WAHANA ================= -->
+
+        <!-- Card 1: Rafting -->
+        <div class="oneday-card reveal delay-100 bg-slate-800/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="satuan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Rafting Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-emerald-500/20 backdrop-blur-md border border-emerald-400/40 text-emerald-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Satuan</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Rafting / Arung Jeram</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-white border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Safety Equipment & Guide</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Ticket & Insurance</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Dokumentasi</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Min. 5 Person</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-white font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 150k <span class="text-[10px] font-normal text-white">/orang</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-emerald-400/100 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Rafting / Arung Jeram Rahayu"
+              data-image="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 150.000 / Orang (Min. 5 Person)"
+              data-badge="Wahana Satuan"
+              data-desc="Nikmati sensasi mengarungi aliran sungai bersama tim terlatih dari Rahayu Outbound."
+              data-items="Safety Equipment & Guide|Ticket & Insurance|Dokumentasi|Minimal 5 Person">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2: Flying Fox -->
+        <div class="oneday-card reveal delay-200 bg-slate-800/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="satuan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80" alt="Flying Fox Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-emerald-500/20 backdrop-blur-md border border-emerald-400/40 text-emerald-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Satuan</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Flying Fox</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-white border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Safety Equipment</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Guide Profesional</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Dokumentasi</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Min. 5 Person</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-white font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 30k <span class="text-[10px] font-normal text-white">/orang</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-emerald-400/100 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Wahana Flying Fox Rahayu"
+              data-image="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 30.000 / Orang (Min. 5 Person)"
+              data-badge="Wahana Satuan"
+              data-desc="Pengalaman meluncur dengan keamanan berstandar tinggi yang didampingi instruktur berpengalaman."
+              data-items="Safety Equipment|Guide Profesional|Dokumentasi|Minimal 5 Person">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3: Paintball -->
+        <div class="oneday-card reveal delay-300 bg-slate-900/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="satuan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&w=600&q=80" alt="Paintball Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-emerald-500/20 backdrop-blur-md border border-emerald-400/40 text-emerald-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Satuan</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Paintball</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-white border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Uniform / Seragam</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Vest Pelindung</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Weapon / Senjata</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>40 Bullet / Peluru</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-white font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 85k <span class="text-[10px] font-normal text-white">/orang</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-emerald-400/100 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Wahana Paintball War Simulation"
+              data-image="https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 85.000 / Orang"
+              data-badge="Wahana Satuan"
+              data-desc="Simulasi perang di alam terbuka untuk melatih kerja sama tim dan strategi pembagian tugas."
+              data-items="Uniform / Seragam|Vest / Rompi Pelindung|Weapon / Senjata Paintball|40 Bullet / Peluru Cat">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 4: ATV -->
+        <div class="oneday-card reveal delay-400 bg-slate-900/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="satuan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="ATV Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-emerald-500/20 backdrop-blur-md border border-emerald-400/40 text-emerald-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Satuan</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Wahana ATV</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-white border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Beautiful View Trek</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Guide Lapangan</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Safety Equipment</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-white font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 250k <span class="text-[10px] font-normal text-white">/unit</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-emerald-400/100 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Sewa & Adventure ATV Rahayu"
+              data-image="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 250.000 / Unit"
+              data-badge="Wahana Satuan"
+              data-desc="Sensasi berkendara sepeda motor roda empat menyusuri lintasan pegunungan."
+              data-items="Beautiful View Trek|Guide Lapangan|Safety Equipment (Helm & APD)">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 5: Fun Games -->
+        <div class="oneday-card reveal delay-100 bg-slate-900/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="satuan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=600&q=80" alt="Fun Games Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-emerald-500/20 backdrop-blur-md border border-emerald-400/40 text-emerald-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Satuan</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Fun Games Outbound</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-white border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Games Equipment</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Game Master</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Min. 10 Person</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-white font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 75k <span class="text-[10px] font-normal text-white">/orang</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-emerald-400/100 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Fun Games & Ice Breaking Program"
+              data-image="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 75.000 / Orang (Min. 10 Person)"
+              data-badge="Wahana Satuan"
+              data-desc="Permainan kelompok yang melatih kekompakan, komunikasi, dan keakraban antar peserta."
+              data-items="Games Equipment Lengkap|Game Master Profesional|Program Ice Breaking & Team Building|Minimal 10 Person">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 6: Explore Jimny -->
+        <div class="oneday-card reveal delay-200 bg-slate-900/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="satuan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="Explore Jimny Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-emerald-500/20 backdrop-blur-md border border-emerald-400/40 text-emerald-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Satuan</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Explore Jimny 4x4</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-white border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Unit Suzuki Jimny</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Guide Profesional</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Dokumentasi</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Max. 5 Person</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-white font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 1.000k <span class="text-[10px] font-normal text-white">/unit</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-emerald-400/100 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Explore Alam dengan Suzuki Jimny 4x4"
+              data-image="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 1.000.000 / Unit (Max. 5 Person)"
+              data-badge="Wahana Satuan"
+              data-desc="Tur keliling lokasi wisata ikonik menggunakan armada mobil Jimny klasik nan perkasa."
+              data-items="Sewa Unit Mobil Jimny|Guide Profesional / Driver|Dokumentasi Acara|Kapasitas Maksimal 5 Orang">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 7: Offroad Land Rover -->
+        <div class="oneday-card reveal delay-300 bg-slate-900/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="satuan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="Offroad Land Rover Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-emerald-500/20 backdrop-blur-md border border-emerald-400/40 text-emerald-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Satuan</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Offroad Land Rover</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-white border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Unit Land Rover</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Guide Profesional</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Dokumentasi</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Max. 8 Person</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-white font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 1.500k <span class="text-[10px] font-normal text-white">/unit</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-emerald-400/100 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Offroad Land Rover Adventure"
+              data-image="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 1.500.000 / Unit (Max. 8 Person)"
+              data-badge="Wahana Satuan"
+              data-desc="Petualangan offroad ekstrem membelah kawasan hutan dan kebun teh menggunakan Land Rover."
+              data-items="Sewa Unit Jeep Land Rover|Guide / Driver Profesional|Dokumentasi Foto|Kapasitas Maksimal 8 Orang">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ================= PAKET BUNDLING ================= -->
+
+        <!-- Card: Paket A -->
+        <div class="oneday-card reveal delay-100 bg-slate-900/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="kegiatan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Paket A Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-amber-500/20 backdrop-blur-md border border-amber-400/40 text-amber-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Bundling A</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Paket A (Rafting)</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-white border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Rafting</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Guide & Rescue</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Tiket Masuk</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Asuransi</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-white font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 150k <span class="text-[10px] font-normal text-white">/orang</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-white/10 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Paket Bundling A - Rafting Standard"
+              data-image="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 150.000 / Orang"
+              data-badge="Paket Bundling"
+              data-desc="Paket dasar pengarungan arung jeram lengkap dengan perlindungan asuransi dan pendampingan tim rescue."
+              data-items="Rafting / Arung Jeram|Guide Pengarungan|Tim Rescue Standby|Tiket Masuk Wahana|Asuransi Peserta">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card: Paket B -->
+        <div class="oneday-card reveal delay-200 bg-slate-900/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="kegiatan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Paket B Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-amber-500/20 backdrop-blur-md border border-amber-400/40 text-amber-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Bundling B</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Paket B (Rafting + Makan)</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-slate-300 border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Rafting</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Makan 1x</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Guide & Rescue</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Tiket & Asuransi</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-slate-400 font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 175k <span class="text-[10px] font-normal text-slate-400">/orang</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-white/10 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Paket Bundling B - Rafting + Makan 1x"
+              data-image="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 175.000 / Orang"
+              data-badge="Paket Bundling"
+              data-desc="Solusi hemat untuk rombongan yang ingin berkegiatan rafting sekaligus makan bersama."
+              data-items="Rafting / Arung Jeram|Makan 1x|Guide Pengarungan|Tim Rescue Standby|Tiket Masuk Wahana|Asuransi Peserta">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card: Paket C -->
+        <div class="oneday-card reveal delay-300 bg-slate-900/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="kegiatan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80" alt="Paket C Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-amber-500/20 backdrop-blur-md border border-amber-400/40 text-amber-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Bundling C</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Paket C (Rafting + Flying Fox)</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-slate-300 border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Rafting & Flying Fox</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Makan 1x</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Guide & Rescue</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Tiket & Asuransi</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-slate-400 font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 200k <span class="text-[10px] font-normal text-slate-400">/orang</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-white/10 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Paket Bundling C - Rafting + Flying Fox + Makan"
+              data-image="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 200.000 / Orang"
+              data-badge="Paket Bundling"
+              data-desc="Rasakan gairah petualangan mengarungi sungai sekaligus terbang melintasi alam pegunungan."
+              data-items="Rafting / Arung Jeram|Wahana Flying Fox|Makan 1x|Guide Pengarungan|Tim Rescue|Tiket & Asuransi">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card: Paket D -->
+        <div class="oneday-card reveal delay-400 bg-slate-900/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="kegiatan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&w=600&q=80" alt="Paket D Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-amber-500/20 backdrop-blur-md border border-amber-400/40 text-amber-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Bundling D</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Paket D (Rafting + Paintball)</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-slate-300 border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Rafting & Paintball</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Makan 1x</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Guide & Rescue</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Tiket & Asuransi</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-slate-400 font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 255k <span class="text-[10px] font-normal text-slate-400">/orang</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-white/10 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Paket Bundling D - Rafting + Paintball + Makan"
+              data-image="https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 255.000 / Orang"
+              data-badge="Paket Bundling"
+              data-desc="Pilihan sempurna bagi tim kerja atau komunitas yang menginginkan adu ketangkasan dan kekompakan."
+              data-items="Rafting / Arung Jeram|Paintball Wargame|Makan 1x|Guide & Rescue|Tiket & Asuransi">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card: Paket E -->
+        <div class="oneday-card reveal delay-100 bg-slate-900/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="kegiatan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Paket E Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-amber-500/20 backdrop-blur-md border border-amber-400/40 text-amber-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Bundling E</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Paket E (Tri-Combo)</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-slate-300 border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Rafting, Flying Fox, Paintball</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Makan 1x</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Guide & Rescue</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Tiket & Asuransi</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-slate-400 font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 280k <span class="text-[10px] font-normal text-slate-400">/orang</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-white/10 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Paket E - Rafting + Flying Fox + Paintball"
+              data-image="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 280.000 / Orang"
+              data-badge="Favorit Bundling"
+              data-desc="Tiga aktivitas outdoor terbaik gabung dalam satu hari penuh keseruan tanpa henti."
+              data-items="Rafting / Arung Jeram|Flying Fox|Paintball Wargame|Makan 1x|Guide & Rescue|Tiket & Asuransi">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card: Paket F -->
+        <div class="oneday-card reveal delay-200 bg-slate-900/40 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-400/50 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group" data-category="kegiatan">
+          <div class="relative h-36 sm:h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=600&q=80" alt="Paket F Rahayu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-1 rounded-md bg-rose-500/20 backdrop-blur-md border border-rose-400/40 text-rose-300 font-bold text-[10px] sm:text-xs uppercase tracking-wide">Ultimate F</span>
+          </div>
+          <div class="p-3 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xs sm:text-lg font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-2">Paket F (Ultimate Complete)</h3>
+              <ul class="mt-3 space-y-1 text-[11px] sm:text-xs text-slate-300 border-t border-white/10 pt-2">
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Rafting, Flying Fox, Paintball</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Fun Game & Makan 1x</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Guide & Rescue</li>
+                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5 text-[10px]"></i>Tiket & Asuransi</li>
+              </ul>
+              <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-[10px] sm:text-xs text-slate-400 font-medium">Harga</span>
+                <span class="text-xs sm:text-base font-extrabold text-emerald-400">Rp 350k <span class="text-[10px] font-normal text-slate-400">/orang</span></span>
+              </div>
+            </div>
+            <button class="btn-detail mt-4 w-full py-2 sm:py-2.5 rounded-xl bg-white/10 hover:bg-emerald-500/20 backdrop-blur-md border border-white/15 hover:border-emerald-400/50 text-white hover:text-emerald-300 font-bold text-[11px] sm:text-xs transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+              data-title="Paket F - Ultimate Complete Outbound Day"
+              data-image="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 350.000 / Orang"
+              data-badge="Lengkap & VIP"
+              data-desc="Pengalaman outbound paling lengkap dan berkesan dengan seluruh wahana unggulan Rahayu Outbound."
+              data-items="Rafting / Arung Jeram|Flying Fox|Paintball Wargame|Fun Game Program|Makan 1x|Guide & Rescue|Tiket & Asuransi">
+              <span>Detail & Pesan</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ==========================================
+           CUSTOM PACKAGE BUILDER (GLASSMORPHISM STYLE)
+           ========================================== -->
+      <div class="mt-16 bg-slate-800/40 backdrop-blur-xl border border-white/15 rounded-3xl p-6 sm:p-10 shadow-2xl reveal">
+        <div class="max-w-3xl mx-auto text-center mb-8">
+          <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/50 backdrop-blur-md border border-emerald-400/30 text-emerald-300 font-bold text-xs uppercase tracking-wider mb-2">Bikin Paket Sendiri</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Buat Paket Custom Sesuai Keinginan</h3>
+          <p class="text-slate-300 text-xs sm:text-sm mt-2">Pilih aktivitas favoritmu dan tentukan jumlah peserta. Harga akan langsung terhitung otomatis! (Minimal 5 orang)</p>
+        </div>
+
+        <form id="custom-package-form" class="space-y-6 max-w-4xl mx-auto">
+          <!-- Input Jumlah Peserta -->
+          <div class="bg-white/100 backdrop-blur-md p-4 rounded-2xl border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <label for="custom-participants" class="text-sm font-bold text-slate-500 flex items-center gap-2">
+              <i class="fa-solid fa-users text-emerald-400"></i> Jumlah Peserta (Min. 5 Orang):
+            </label>
+            <div class="flex items-center space-x-3">
+              <button type="button" id="btn-dec-participants" class="w-9 h-9 rounded-xl bg-white/60 border border-slate-200 text-slate-500 font-bold hover:bg-emerald-500/30 hover:border-emerald-400 transition-all">-</button>
+              <input type="number" id="custom-participants" value="5" min="5" class="w-20 text-center py-1.5 px-2 bg-white border border-slate-200 rounded-xl text-emerald-400 font-black text-lg focus:outline-none focus:border-emerald-400">
+              <button type="button" id="btn-inc-participants" class="w-9 h-9 rounded-xl bg-white/60 border border-slate-200 text-slate-500 font-bold hover:bg-emerald-500/30 hover:border-emerald-400 transition-all">+</button>
+            </div>
+          </div>
+
+          <!-- Pilihan Wahana Checkbox Grid (Glassmorphic Cards) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            
+            <label class="custom-wahana-item relative flex items-center p-3.5 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl cursor-pointer hover:border-emerald-400/50 hover:bg-white/10 transition-all">
+              <input type="checkbox" value="150000" data-name="Rafting / Arung Jeram" data-type="pax" class="custom-item-cb w-4 h-4 text-emerald-400 rounded border-white/20 focus:ring-0 accent-emerald-500">
+              <div class="ml-3">
+                <span class="block text-xs sm:text-sm font-bold text-slate-100">Rafting / Arung Jeram</span>
+                <span class="text-[11px] text-emerald-400 font-semibold">Rp 150.000 <span class="text-slate-400 font-normal">/orang</span></span>
+              </div>
+            </label>
+
+            <label class="custom-wahana-item relative flex items-center p-3.5 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl cursor-pointer hover:border-emerald-400/50 hover:bg-white/10 transition-all">
+              <input type="checkbox" value="30000" data-name="Flying Fox" data-type="pax" class="custom-item-cb w-4 h-4 text-emerald-400 rounded border-white/20 focus:ring-0 accent-emerald-500">
+              <div class="ml-3">
+                <span class="block text-xs sm:text-sm font-bold text-slate-100">Flying Fox</span>
+                <span class="text-[11px] text-emerald-400 font-semibold">Rp 30.000 <span class="text-slate-400 font-normal">/orang</span></span>
+              </div>
+            </label>
+
+            <label class="custom-wahana-item relative flex items-center p-3.5 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl cursor-pointer hover:border-emerald-400/50 hover:bg-white/10 transition-all">
+              <input type="checkbox" value="85000" data-name="Paintball Wargame" data-type="pax" class="custom-item-cb w-4 h-4 text-emerald-400 rounded border-white/20 focus:ring-0 accent-emerald-500">
+              <div class="ml-3">
+                <span class="block text-xs sm:text-sm font-bold text-slate-100">Paintball Wargame</span>
+                <span class="text-[11px] text-emerald-400 font-semibold">Rp 85.000 <span class="text-slate-400 font-normal">/orang</span></span>
+              </div>
+            </label>
+
+            <label class="custom-wahana-item relative flex items-center p-3.5 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl cursor-pointer hover:border-emerald-400/50 hover:bg-white/10 transition-all">
+              <input type="checkbox" value="75000" data-name="Fun Games Outbound" data-type="pax" class="custom-item-cb w-4 h-4 text-emerald-400 rounded border-white/20 focus:ring-0 accent-emerald-500">
+              <div class="ml-3">
+                <span class="block text-xs sm:text-sm font-bold text-slate-100">Fun Games Outbound</span>
+                <span class="text-[11px] text-emerald-400 font-semibold">Rp 75.000 <span class="text-slate-400 font-normal">/orang</span></span>
+              </div>
+            </label>
+
+            <label class="custom-wahana-item relative flex items-center p-3.5 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl cursor-pointer hover:border-emerald-400/50 hover:bg-white/10 transition-all">
+              <input type="checkbox" value="250000" data-name="Sewa ATV" data-type="unit" class="custom-item-cb w-4 h-4 text-emerald-400 rounded border-white/20 focus:ring-0 accent-emerald-500">
+              <div class="ml-3">
+                <span class="block text-xs sm:text-sm font-bold text-slate-100">ATV Adventure</span>
+                <span class="text-[11px] text-emerald-400 font-semibold">Rp 250.000 <span class="text-slate-400 font-normal">/unit</span></span>
+              </div>
+            </label>
+
+            <label class="custom-wahana-item relative flex items-center p-3.5 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl cursor-pointer hover:border-emerald-400/50 hover:bg-white/10 transition-all">
+              <input type="checkbox" value="1000000" data-name="Explore Jimny 4x4" data-type="unit" class="custom-item-cb w-4 h-4 text-emerald-400 rounded border-white/20 focus:ring-0 accent-emerald-500">
+              <div class="ml-3">
+                <span class="block text-xs sm:text-sm font-bold text-slate-100">Explore Jimny 4x4</span>
+                <span class="text-[11px] text-emerald-400 font-semibold">Rp 1.000.000 <span class="text-slate-400 font-normal">/unit</span></span>
+              </div>
+            </label>
+
+            <label class="custom-wahana-item relative flex items-center p-3.5 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl cursor-pointer hover:border-emerald-400/50 hover:bg-white/10 transition-all">
+              <input type="checkbox" value="1500000" data-name="Offroad Land Rover" data-type="unit" class="custom-item-cb w-4 h-4 text-emerald-400 rounded border-white/20 focus:ring-0 accent-emerald-500">
+              <div class="ml-3">
+                <span class="block text-xs sm:text-sm font-bold text-slate-100">Offroad Land Rover</span>
+                <span class="text-[11px] text-emerald-400 font-semibold">Rp 1.500.000 <span class="text-slate-400 font-normal">/unit</span></span>
+              </div>
+            </label>
+
+          </div>
+
+          <!-- Total Ringkasan & Tombol Pesan Glassmorphic -->
+          <div class="bg-white backdrop-blur-md p-5 rounded-2xl border border-emerald-500/30 flex flex-col md:flex-row items-center justify-between gap-4 mt-6">
+            <div>
+              <span class="text-xs text-slate-400 block">Estimasi Total Harga Custom:</span>
+              <div class="text-2xl sm:text-3xl font-black text-emerald-400" id="custom-total-price">Rp 0</div>
+              <span class="text-[11px] text-slate-400" id="custom-summary-text">Belum ada wahana dipilih</span>
+            </div>
+
+            <button type="button" id="btn-custom-order-wa" class="w-full md:w-auto px-8 py-3.5 rounded-xl bg-emerald-500/90 hover:bg-emerald-500/40 backdrop-blur-md border border-emerald-400/60 text-white font-black text-sm transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg shadow-emerald-500/10">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Pesan Paket Custom Via WA</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 3: PAKET MENGINAP (Warna Dominan Putih)
+       (Card dengan Judul, Foto, List Deskripsi, Harga, CTA)
+       ========================================== -->
+  <section id="menginap" class="py-24 relative overflow-hidden bg-slate-900">
+    
+    <!-- Section Background Image Full Opacity (Tanpa Transparan Putih) -->
+    <div class="absolute inset-0 z-0">
+      <img src="img/bg3.jpg" alt="Mountain Camp Background" class="w-full h-full object-cover opacity-80">
+      <div class="absolute inset-0 bg-slate-950/1 "></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-amber-500/10 backdrop-blur-md border border-amber-400/40 text-amber-500 font-extrabold text-xs sm:text-sm tracking-widest uppercase mb-3">Pengalaman Menginap Istimewa</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-emerald-600 mt-2 mb-4 drop-shadow-sm">Paket Menginap & Camping</h2>
+        <p class="text-dark text-base font-medium drop-shadow-sm">
+          Nikmati malam bertabur bintang di tengah ketenangan alam dengan fasilitas penginapan yang nyaman, bersih, dan aman.
+        </p>
+      </div>
+
+      <!-- Stay Package Cards Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Stay Card 1: Glamping Luxury Riverside -->
+        <div class="reveal delay-100 bg-slate-50 rounded-3xl overflow-hidden border border-slate-200/90 hover:border-amber-500 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <!-- Photo -->
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80" alt="Glamping Luxury" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber-500 text-white font-extrabold text-xs shadow-md">Best Seller Stay</span>
+            </div>
+            
+            <div class="p-6 sm:p-8">
+              <!-- Title & Price -->
+              <h3 class="text-2xl font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Glamping Luxury Riverside</h3>
+              <div class="mt-2 flex items-baseline space-x-2">
+                <span class="text-2xl font-black text-amber-600">Rp 450.000</span>
+                <span class="text-sm font-medium text-slate-500">/ orang / malam</span>
+              </div>
+
+              <!-- Brief Description -->
+              <p class="text-slate-600 text-sm mt-4 leading-relaxed font-normal">
+                Tenda glamping eksklusif tepi sungai dengan kasur empuk springbed, kamar mandi dalam shower air hangat, dan balkon pribadi pemandangan lembah.
+              </p>
+
+              <!-- Feature List with Icons -->
+              <div class="mt-6 pt-6 border-t border-slate-200">
+                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4">Fasilitas Utama Paket:</h4>
+                <ul class="space-y-3 text-sm text-slate-700 font-medium">
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-500 text-base shrink-0"></i>
+                    <span>Tenda Glamping Kapasitas 4-6 Orang</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-500 text-base shrink-0"></i>
+                    <span>Springbed Lengkap Bantal & Selimut Tebal</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-500 text-base shrink-0"></i>
+                    <span>Kamar Mandi Dalam Water Heater</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-500 text-base shrink-0"></i>
+                    <span>3x Makan (Siang, Malam BBQ, Sarapan)</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-500 text-base shrink-0"></i>
+                    <span>Api Unggun Malam & Jagung Bakar</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="p-6 sm:p-8 pt-0">
+            <button class="btn-detail w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-extrabold text-sm shadow-md hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center space-x-2"
+              data-title="Paket Glamping Luxury Riverside 2D1N"
+              data-image="https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 450.000 / orang / malam (Min. 4 Orang)"
+              data-badge="Eksklusif Glamping"
+              data-desc="Nikmati sensasi menginap mewah di alam terbuka dengan gemericik air sungai yang menenangkan dan fasilitas layaknya hotel berbintang."
+              data-items="Tenda Glamping Springbed King/Twin|Kamar Mandi Dalam Hot Water|3x Makan Gourmet & Coffee Break|Paket Api Unggun & BBQ Night|Free Access Kolam Alami|Listrik & Wi-Fi Area">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Pesan Glamping Now</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Stay Card 2: Pine Cottage Resort -->
+        <div class="reveal delay-200 bg-slate-50 rounded-3xl overflow-hidden border border-slate-200/90 hover:border-emerald-500 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <!-- Photo -->
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80" alt="Cottage Resort" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-emerald-600 text-white font-extrabold text-xs shadow-md">Resort Vibe</span>
+            </div>
+            
+            <div class="p-6 sm:p-8">
+              <!-- Title & Price -->
+              <h3 class="text-2xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">Pine Wood Cottage</h3>
+              <div class="mt-2 flex items-baseline space-x-2">
+                <span class="text-2xl font-black text-emerald-600">Rp 550.000</span>
+                <span class="text-sm font-medium text-slate-500">/ orang / malam</span>
+              </div>
+
+              <!-- Brief Description -->
+              <p class="text-slate-600 text-sm mt-4 leading-relaxed font-normal">
+                Kabin kayu hangat berarsitektur alami bernuansa pinus dengan ruang keluarga luas, cocok untuk gathering keluarga besar atau perusahaan.
+              </p>
+
+              <!-- Feature List with Icons -->
+              <div class="mt-6 pt-6 border-t border-slate-200">
+                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4">Fasilitas Utama Paket:</h4>
+                <ul class="space-y-3 text-sm text-slate-700 font-medium">
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-emerald-600 text-base shrink-0"></i>
+                    <span>Cottage Kayu 2 Lantai (Kapasitas 10-15 Orang)</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-emerald-600 text-base shrink-0"></i>
+                    <span>Ruang Keluarga, Smart TV & Karaoke</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-emerald-600 text-base shrink-0"></i>
+                    <span>Dapur Bersih & Alat Masak Lengkap</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-emerald-600 text-base shrink-0"></i>
+                    <span>3x Makan Buffet & Coffee Break</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-emerald-600 text-base shrink-0"></i>
+                    <span>Akses Kolam Renang & Gazebo Santai</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="p-6 sm:p-8 pt-0">
+            <button class="btn-detail w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm shadow-md hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center space-x-2"
+              data-title="Paket Pine Wood Cottage Resort 2D1N"
+              data-image="https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 550.000 / orang / malam (Min. 10 Orang)"
+              data-badge="Keluarga & Rombongan"
+              data-desc="Resort cottage berbahan kayu alami yang memberikan kehangatan dan kebersamaan maksimal untuk acara keluarga besar atau rapat kerja bernuansa santai."
+              data-items="Cottage 2 Lantai Lengkap|Ruang Pertemuan & Audio Karaoke|3x Makan & 2x Coffee Break|Akses Kolam Renang Resort|Fasilitas Olahraga Outdoor|Pelayanan Room Service 24 Jam">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Pesan Cottage Now</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Stay Card 3: Eco Family Camping -->
+        <div class="reveal delay-300 bg-slate-50 rounded-3xl overflow-hidden border border-slate-200/90 hover:border-teal-500 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <!-- Photo -->
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80" alt="Eco Camping" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-teal-600 text-white font-extrabold text-xs shadow-md">Adventure Camp</span>
+            </div>
+            
+            <div class="p-6 sm:p-8">
+              <!-- Title & Price -->
+              <h3 class="text-2xl font-bold text-slate-900 group-hover:text-teal-600 transition-colors">Eco Family Camping</h3>
+              <div class="mt-2 flex items-baseline space-x-2">
+                <span class="text-2xl font-black text-teal-600">Rp 250.000</span>
+                <span class="text-sm font-medium text-slate-500">/ orang / malam</span>
+              </div>
+
+              <!-- Brief Description -->
+              <p class="text-slate-600 text-sm mt-4 leading-relaxed font-normal">
+                Berkemah seru di tengah rerumputan hijau dan deretan pohon pinus dengan peralatan camp lengkap tanpa perlu repot membawa perlengkapan sendiri.
+              </p>
+
+              <!-- Feature List with Icons -->
+              <div class="mt-6 pt-6 border-t border-slate-200">
+                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4">Fasilitas Utama Paket:</h4>
+                <ul class="space-y-3 text-sm text-slate-700 font-medium">
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-teal-600 text-base shrink-0"></i>
+                    <span>Tenda Dome Double Layer Waterproof</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-teal-600 text-base shrink-0"></i>
+                    <span>Matras Foam & Sleeping Bag Hangat</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-teal-600 text-base shrink-0"></i>
+                    <span>Lampu Tenda & Colokan Listrik Lapangan</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-teal-600 text-base shrink-0"></i>
+                    <span>2x Makan (Malam BBQ & Sarapan)</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-teal-600 text-base shrink-0"></i>
+                    <span>Toilet & Kamar Mandi Bersih 24 Jam</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="p-6 sm:p-8 pt-0">
+            <button class="btn-detail w-full py-3.5 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-extrabold text-sm shadow-md hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center space-x-2"
+              data-title="Paket Eco Family Camping Pine Forest 2D1N"
+              data-image="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80"
+              data-price="Rp 250.000 / orang / malam (Min. 4 Orang)"
+              data-badge="Camping Hemat & Fun"
+              data-desc="Solusi kemping praktis anti ribet. Tenda sudah dipasangkan lengkap dengan perlengkapan tidur hangat dan hidangan malam bernuansa kebersamaan."
+              data-items="Tenda Dome Kapasitas 4 Orang|Matras Tebal & Sleeping Bag|Lampu Penerangan Tenda|BBQ Night & Api Unggun Kebersamaan|Sarapan Nasi Goreng Spesial|Kamar Mandi & Musholla Area">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Pesan Camping Now</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 4: GALLERY (Warna Dominan Putih)
+       ========================================== -->
+  <section id="gallery" class="py-24 bg-slate-100/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+        <span class="text-emerald-600 font-extrabold text-sm tracking-widest uppercase">Dokumentasi Momen</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-4">Galeri Kegiatan Rahayu</h2>
+        <p class="text-slate-600 text-base font-medium">
+          Lihat kembali keceriaan, senyum, dan tantangan yang telah dilewati para peserta outbound kami di alam lepas.
+        </p>
+
+        <!-- Gallery Filter Category Buttons -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mt-8">
+          <button class="gallery-filter-btn active px-4 py-2 rounded-full text-xs font-bold bg-emerald-600 text-white shadow-md transition-all" data-filter="all">Semua Momen</button>
+          <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-700 hover:bg-slate-200 border border-slate-200 transition-all" data-filter="teambuilding">Team Building</button>
+          <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-700 hover:bg-slate-200 border border-slate-200 transition-all" data-filter="rafting">Rafting</button>
+          <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-700 hover:bg-slate-200 border border-slate-200 transition-all" data-filter="camping">Camping & Glamping</button>
+        </div>
+      </div>
+
+      <!-- Gallery Photo Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div class="gallery-item cursor-pointer reveal delay-100 group relative overflow-hidden rounded-2xl h-56 bg-white border border-slate-200 shadow-sm hover:shadow-xl transition-all" data-category="teambuilding" data-caption="Keseruan Fun Games Kekompakan Tim Perusahaan">
+          <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80" alt="Team Building" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs font-bold text-white"><i class="fa-solid fa-magnifying-glass-plus text-emerald-400 mr-2"></i>Fun Games & Team Building</span>
+          </div>
+        </div>
+
+        <div class="gallery-item cursor-pointer reveal delay-200 group relative overflow-hidden rounded-2xl h-56 bg-white border border-slate-200 shadow-sm hover:shadow-xl transition-all" data-category="rafting" data-caption="Petualangan Arung Jeram Sungai Menantang">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Rafting Sungai" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs font-bold text-white"><i class="fa-solid fa-magnifying-glass-plus text-emerald-400 mr-2"></i>Rafting Arung Jeram</span>
+          </div>
+        </div>
+
+        <div class="gallery-item cursor-pointer reveal delay-300 group relative overflow-hidden rounded-2xl h-56 bg-white border border-slate-200 shadow-sm hover:shadow-xl transition-all" data-category="camping" data-caption="Suasana Malam Api Unggun di Tenda Glamping">
+          <img src="https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=600&q=80" alt="Glamping Malam" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs font-bold text-white"><i class="fa-solid fa-magnifying-glass-plus text-emerald-400 mr-2"></i>Glamping Riverside</span>
+          </div>
+        </div>
+
+        <div class="gallery-item cursor-pointer reveal delay-400 group relative overflow-hidden rounded-2xl h-56 bg-white border border-slate-200 shadow-sm hover:shadow-xl transition-all" data-category="teambuilding" data-caption="Simulasi Paintball Wargame di Hutan Pinus">
+          <img src="https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&w=600&q=80" alt="Paintball Wargame" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs font-bold text-white"><i class="fa-solid fa-magnifying-glass-plus text-emerald-400 mr-2"></i>Paintball Battle</span>
+          </div>
+        </div>
+
+        <div class="gallery-item cursor-pointer reveal delay-100 group relative overflow-hidden rounded-2xl h-56 bg-white border border-slate-200 shadow-sm hover:shadow-xl transition-all" data-category="camping" data-caption="Tenda Camping di Tengah Hutan Pinus Perbukitan">
+          <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=600&q=80" alt="Eco Camping" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs font-bold text-white"><i class="fa-solid fa-magnifying-glass-plus text-emerald-400 mr-2"></i>Pine Camping Ground</span>
+          </div>
+        </div>
+
+        <div class="gallery-item cursor-pointer reveal delay-200 group relative overflow-hidden rounded-2xl h-56 bg-white border border-slate-200 shadow-sm hover:shadow-xl transition-all" data-category="teambuilding" data-caption="Trek Jelajah Offroad Jeep 4x4 Perkebunan Teh">
+          <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="Jeep Offroad" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <span class="text-xs font-bold text-white"><i class="fa-solid fa-magnifying-glass-plus text-emerald-400 mr-2"></i>Jeep 4x4 Offroad</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 5: ABOUT US (Warna Dominan Putih)
+       (Deskripsi & LOGO DI BAGIAN TENGAH)
+       ========================================== -->
+  <section id="about" class="py-24 bg-white relative overflow-hidden">
+    
+    <!-- Decorative Glow -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      
+      <!-- CENTERED LOGO WITH ANIMATED GLOW & RIPPLE -->
+      <div class="reveal flex justify-center mb-10">
+        <div class="relative group">
+          <!-- Ripple Glow Rings -->
+          <div class="absolute inset-0 rounded-full bg-emerald-500/20 animate-ripple"></div>
+          <div class="absolute -inset-4 rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 opacity-20 blur-lg group-hover:opacity-50 transition-opacity duration-500"></div>
+
+          <!-- Main Logo Emblem Container -->
+          <div class="relative w-40 h-40 sm:w-30 sm:h-30 rounded-full bg-white p-2 border-2 border-emerald-500 shadow-2xl flex items-center justify-center animate-float">
+            <img src="img/logo4.png" alt="Rahayu Outbound Logo" class="w-full h-full   object-contain filter drop-shadow-md">
+          </div>
+        </div>
+      </div>
+
+      <!-- About Description Content -->
+      <div class="reveal delay-100 max-w-3xl mx-auto">
+        <span class="text-emerald-600 font-extrabold text-sm tracking-widest uppercase">Tentang Kami</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-6">Mitra Terbaik Petualangan & Outbound Anda</h2>
+        
+        <p class="text-slate-700 text-base sm:text-lg leading-relaxed mb-6 font-normal">
+          <strong class="text-emerald-600">Rahayu Outbound</strong> adalah event organizer spesialis kegiatan luar ruangan (outdoor activity) profesional di Indonesia. Kami berdedikasi menciptakan pengalaman seru, aman, dan berkesan untuk instansi pemerintah, perusahaan corporate, sekolah, serta komunitas.
+        </p>
+        
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-10">
+          Dengan dukungan tim fasilitator bersertifikat nasional, peralatan keselamatan terstandar internasional, serta lokasi venue terbaik di pegunungan dan tepi sungai, kami menjamin setiap kegiatan berjalan dengan lancar dan penuh kegembiraan.
+        </p>
+      </div>
+
+      <!-- Core Pillars / Why Choose Us Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left mt-12">
+        
+        <div class="reveal delay-200 bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-emerald-500 shadow-sm transition-all">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-600 text-xl mb-4">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Keamanan Utama</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Peralatan bersertifikat dan tim medis & P3K selalu siaga di setiap lokasi kegiatan.</p>
+        </div>
+
+        <div class="reveal delay-300 bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-emerald-500 shadow-sm transition-all">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 text-xl mb-4">
+            <i class="fa-solid fa-user-gear"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Fasilitator Handal</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Master game & instruktur berpengalaman yang ramah, energik, serta komunikatif.</p>
+        </div>
+
+        <div class="reveal delay-400 bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-emerald-500 shadow-sm transition-all">
+          <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center text-teal-600 text-xl mb-4">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Paket Fleksibel</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Program dapat disesuaikan (customized) dengan anggaran dan kebutuhan instansi Anda.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       FOOTER SECTION (Dominan Terang Berkelas)
+       ========================================== -->
+  <footer class="bg-slate-100 border-t border-slate-200 pt-16 pb-12 text-slate-600 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Column 1: Brand Info -->
+        <div>
+          <a href="#home" class="flex items-center space-x-3 mb-4">
+            <img src="img/logo4.png" alt="Rahayu Outbound Logo" class="h-10 w-auto">
+            <span class="text-lg font-black text-slate-900 tracking-tight">RAHAYU OUTBOUND</span>
+          </a>
+          <p class="text-xs leading-relaxed text-slate-600 mb-6 font-medium">
+            Penyedia jasa wisata edukasi, outbound gathering, rafting, dan penginapan alam terbuka terbaik dengan pelayanan bintang lima.
+          </p>
+          <div class="flex space-x-3">
+            <a href="#" class="w-9 h-9 rounded-full bg-white border border-slate-300 hover:border-emerald-500 text-slate-700 hover:text-emerald-600 flex items-center justify-center transition-colors shadow-sm"><i class="fa-brands fa-instagram text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white border border-slate-300 hover:border-emerald-500 text-slate-700 hover:text-emerald-600 flex items-center justify-center transition-colors shadow-sm"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white border border-slate-300 hover:border-emerald-500 text-slate-700 hover:text-emerald-600 flex items-center justify-center transition-colors shadow-sm"><i class="fa-brands fa-tiktok text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white border border-slate-300 hover:border-emerald-500 text-slate-700 hover:text-emerald-600 flex items-center justify-center transition-colors shadow-sm"><i class="fa-brands fa-youtube text-sm"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links (5 Menu) -->
+        <div>
+          <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 border-b border-slate-300 pb-2">Navigasi Cepat</h4>
+          <ul class="space-y-2 text-xs font-semibold">
+            <li><a href="#home" class="hover:text-emerald-600 transition-colors">Home</a></li>
+            <li><a href="#oneday" class="hover:text-emerald-600 transition-colors">Paket Oneday Outbound</a></li>
+            <li><a href="#menginap" class="hover:text-emerald-600 transition-colors">Paket Menginap & Glamping</a></li>
+            <li><a href="#gallery" class="hover:text-emerald-600 transition-colors">Galeri Dokumentasi</a></li>
+            <li><a href="#about" class="hover:text-emerald-600 transition-colors">Tentang Rahayu Outbound</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 border-b border-slate-300 pb-2">Hubungi Kami</h4>
+          <ul class="space-y-3 text-xs font-medium">
+            <li class="flex items-start space-x-3">
+              <i class="fa-solid fa-location-dot text-emerald-600 text-sm mt-0.5"></i>
+              <span>Kawasan Wisata Alam Pine Ridge, Jl. Raya Outbound No. 88, Jawa Barat</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i>
+              <span>+62 812-3456-7890 (Call / WA)</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-envelope text-emerald-600 text-sm"></i>
+              <span>info@rahayuoutbound.com</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-clock text-emerald-600 text-sm"></i>
+              <span>Senin - Minggu: 08:00 - 20:00 WIB</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: WhatsApp Direct Booking Card -->
+        <div>
+          <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 border-b border-slate-300 pb-2">Konsultasi Gratis</h4>
+          <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
+            <p class="text-xs text-slate-600 mb-3">Butuh penawaran proposal khusus untuk event kantor Anda?</p>
+            <a href="https://wa.me/6281234567890?text=Halo%20Rahayu%20Outbound,%20saya%20butuh%20proposal%20kegiatan" target="_blank" class="w-full py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center space-x-2 transition-colors shadow-md">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+              <span>Minta Proposal WA</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Notice -->
+      <div class="pt-8 border-t border-slate-200 text-center text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p>&copy; 2026 Rahayu Outbound. All Rights Reserved.</p>
+        <p class="text-[11px]">Dibuat dengan <i class="fa-solid fa-heart text-emerald-600"></i> untuk Petualangan Alam Indonesia.</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==========================================
+       PACKAGE DETAILS & BOOKING MODAL (Versi Putih & Teks Gelap)
+       ========================================== -->
+  <div id="packageModal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-md">
+    <div class="modal-container bg-white border border-slate-200 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative text-slate-900">
+      
+      <!-- Close Button -->
+      <button id="closeModalBtn" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center z-10 transition-colors border border-slate-200">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+
+      <!-- Modal Image Banner -->
+      <div class="relative h-56 sm:h-64 overflow-hidden">
+        <img id="modalImage" src="" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
+        <span id="modalBadge" class="absolute top-4 left-4 px-3 py-1 rounded-full bg-emerald-600 text-white font-extrabold text-xs shadow-md"></span>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 sm:p-8">
+        <h3 id="modalTitle" class="text-2xl font-black text-slate-900"></h3>
+        
+        <div class="mt-2 flex items-baseline space-x-2">
+          <span class="text-sm font-medium text-slate-500">Harga:</span>
+          <span id="modalPrice" class="text-xl font-extrabold text-emerald-600"></span>
+        </div>
+
+        <p id="modalDesc" class="text-slate-600 text-sm mt-4 leading-relaxed font-normal"></p>
+
+        <!-- Dynamic Facility List -->
+        <div class="mt-6 pt-6 border-t border-slate-200">
+          <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4">Rincian Fasilitas & Include:</h4>
+          <ul id="modalList" class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm font-medium"></ul>
+        </div>
+
+        <!-- WhatsApp Booking Button -->
+        <div class="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row gap-3">
+          <a id="modalWaBtn" href="#" target="_blank" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm flex items-center justify-center space-x-2 shadow-lg shadow-emerald-600/30 transition-colors">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Pesan via WhatsApp Sekarang</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       GALLERY LIGHTBOX MODAL
+       ========================================== -->
+  <div id="lightboxModal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-lg">
+    <div class="relative max-w-4xl w-full text-center">
+      <button id="closeLightbox" class="absolute -top-12 right-0 text-white text-3xl hover:text-emerald-400 transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightboxImg" src="" alt="Gallery Preview" class="max-h-[80vh] mx-auto rounded-2xl border border-slate-700 shadow-2xl">
+      <p id="lightboxCaption" class="text-white text-sm mt-4 font-bold"></p>
+    </div>
+  </div>
+
+
+  <!-- JavaScript Script File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
